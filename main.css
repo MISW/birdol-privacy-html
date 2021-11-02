@@ -1,0 +1,120 @@
+*{
+    text-align: center;
+    letter-spacing: 1px;
+       font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
+}
+
+body>h1{
+    font-size: 36px;
+    margin: 70px 10%;
+    letter-spacing: 3px;
+}
+
+body>h1::after{
+    content: "";
+    display: block;
+    height: 3px;  width: 10%;
+    margin: 0 auto;
+    background: skyblue;
+    margin-top: 50px;
+}
+
+.Introduction p{
+    margin: 30px 10%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Introduction a{
+    display: inline-block;
+    width: 30%;
+    border: solid 5px rgb(255,181,170);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+
+.Introduction a:hover{
+    color: white;
+    background: rgb(255,181,170);
+}
+
+.Container>div{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+    padding-top: 30px;
+    border-top: solid 1px #CCC;
+}
+
+.Container>div li{
+    list-style: none;
+    text-align: left;
+    width: calc(50% - 31px);
+    margin: 15px;
+    border: solid 4px skyblue;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    border-radius: 5px;
+}
+
+.Container>div h2{
+    width: 100%;
+    font-size: 32px;
+    padding: 5%;
+}
+
+.Container>div h2::after{
+    content: "";
+    display: block;
+    height: 3px;  width: 10%;
+    margin: 0 auto;
+    background: skyblue;
+    margin-top: 50px;
+}
+
+.Container>div::after{
+    content: "";
+    display: inline-block;
+    width: 50%;
+}
+
+.Container>div li a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    padding: 10px;
+    transition: all .3s;
+}
+
+.Container>div li:hover{
+    background: skyblue;
+}
+
+.Container>div li:hover a{
+    color: white;
+}
+
+.Container>div li a:after{
+    content: "";
+    width: 100%; height: 100%;
+}
+
+@media screen and (max-width: 720px){
+    .Introduction a{
+        width: calc(80% - 30px);
+    }
+    .Container>div li{
+        width: calc(100% - 30px);
+    }
+}
